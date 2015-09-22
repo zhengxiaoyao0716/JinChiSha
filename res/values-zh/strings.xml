@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">今吃啥</string>
+    <string name="breakfast">早餐</string>
+    <string name="collect">收藏</string>
+    <string name="default_rank">默认</string>
+    <string name="dinner">晚餐</string>
+    <string name="feedback">反馈</string>
+    <string name="healthScore">营养指数：</string>
+    <string name="hotScore">人气指数：</string>
+    <string name="UMUpdateCheck">2.6.0.1.20150312</string>
+    <string name="hot_rank">人气</string>
+    <string name="launch">午餐</string>
+    <string name="night_snack">宵夜</string>
+    <string name="price_rank">价格</string>
+    <string name="pubReview">我来评论</string>
+    <string name="reviewHint">我要赞美/吐槽：</string>
+    <string name="seeReview">查看评论</string>
+    <string name="tb_munion_tip_download_prefix">正在下载：</string>
+    <string name="time_rank">时间</string>
+    <string name="umeng_common_icon">图标</string>
+    <string name="umeng_fb_questions_anwser">答：</string>
+    <string name="umeng_fb_questions_question">问：</string>
+</resources>

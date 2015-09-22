@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/food_detail_bg_color"
+    android:orientation="vertical"
+    android:padding="8dp" >
+
+    <TextView
+        android:id="@+id/foodTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/foodImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_marginTop="6dp"
+        android:padding="3dp"
+        android:background="@color/bg_color" />
+
+    <TextView
+        android:id="@+id/positionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_marginTop="6dp"
+        android:padding="6dp"
+        android:background="@color/bg_color"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            
+            <TextView
+                android:id="@+id/breakfastTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/bg_color"
+                android:gravity="center"
+                android:text="@string/breakfast"
+                android:textColor="@color/normal_text_color"
+                android:textSize="12sp" />
+            
+            <TextView
+                android:id="@+id/dinnerTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@color/bg_color"
+                android:gravity="center"
+                android:text="@string/dinner"
+                android:textColor="@color/normal_text_color"
+                android:textSize="12sp" />
+        
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical" >
+            
+            <TextView
+                android:id="@+id/launchTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/bg_color"
+                android:gravity="center"
+                android:text="@string/launch"
+                android:textColor="@color/normal_text_color"
+                android:textSize="12sp" />
+            
+            <TextView
+                android:id="@+id/nightSnackTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@color/bg_color"
+                android:gravity="center"
+                android:text="@string/night_snack"
+                android:textColor="@color/normal_text_color"
+                android:textSize="12sp" />
+        
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/priceTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/light_color"
+            android:textSize="21sp"
+            android:background="@color/bg_color" />
+        
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/bg_color" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="12dp" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hotScore"
+            android:textSize="16sp" />
+
+        <RatingBar
+            android:id="@+id/hotScoreRatingBar"
+            style="@style/RatingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:numStars="5"
+            android:stepSize="1"
+            android:isIndicator="true" />
+        
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/bg_color" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="12dp" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/healthScore"
+            android:textSize="16sp" />
+
+        <RatingBar
+            android:id="@+id/healthScoreRatingBar"
+            style="@style/RatingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:numStars="5"
+            android:stepSize="1"
+            android:isIndicator="true" />
+        
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/bg_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="6dp"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/pubReviewButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/bg_color"
+            android:text="@string/pubReview"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/collectImageButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside" />
+
+        <Button
+            android:id="@+id/seeReviewButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/bg_color"
+            android:text="@string/seeReview"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

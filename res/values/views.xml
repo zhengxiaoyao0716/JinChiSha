@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <style name="ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+
+        <item name="android:background">@color/action_bar_color</item>
+
+    </style>
+    
+    <style name="SecondABStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        
+        <item name="android:background">@color/second_ac_color</item>
+        <item name="android:titleTextStyle">@style/SecondTitleTextStyle</item>
+        
+    </style>
+    
+    <style name="SecondTitleTextStyle">
+        <item name="android:textSize">24sp</item> 
+        <item name="android:textColor">@color/second_titleText_color</item> 
+    </style>
+    
+    <style name="RatingBarStyle" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar</item>
+        <item name="android:minHeight">30dip</item>
+        <item name="android:maxHeight">30dip</item>
+    </style>
+    
+</resources>

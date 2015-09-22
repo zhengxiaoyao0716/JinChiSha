@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="price_rank">Price</string>
+
+    <string name="seeReview">SeeReview</string>
+    <string name="app_name">EatWhatToday</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="collect">Collect</string>
+    <string name="default_rank">Default</string>
+    <string name="dinner">Dinner</string>
+    <string name="feedback">Feedback</string>
+    <string name="healthScore">Health</string>
+    <string name="hotScore">Hot:</string>
+    <string name="hot_rank">Hot</string>
+    <string name="launch">Launch</string>
+    <string name="night_snack">NightSnack</string>
+    <string name="pubReview">PubReview</string>
+    <string name="reviewHint">I want to say:</string>
+    <string name="tb_munion_tip_download_prefix">downloading:</string>
+    <string name="time_rank">Time</string>
+    <string name="umeng_fb_questions_anwser">A:</string>
+</resources>

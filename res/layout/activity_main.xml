@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/restImageView"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+        
+        <ImageView
+            android:id="@+id/floorLImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onFloorChangeClick"
+            android:src="@drawable/floor_left" />
+        
+        <TextView
+            android:id="@+id/floorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30sp" />
+        
+        <ImageView
+            android:id="@+id/floorRImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onFloorChangeClick"
+            android:src="@drawable/floor_right" />
+        
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/sortListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+        
+    </ListView>
+
+</LinearLayout>

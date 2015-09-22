@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+    
+    <!-- 
+    <ImageView
+        android:id="@+id/suggestImageView"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/suggest1" /> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/defaultRankTV"
+            android:layout_width="50dp"
+            android:layout_height="24dp"
+            android:onClick="onRankClick"
+            android:text="@string/default_rank"
+            android:background="@color/bg_color" />
+
+        <Button
+            android:id="@+id/priceRankTV"
+            android:layout_width="50dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:onClick="onRankClick"
+            android:text="@string/price_rank"
+            android:background="@color/bg_color" />
+
+        <Button
+            android:id="@+id/hotRankTV"
+            android:layout_width="50dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:onClick="onRankClick"
+            android:text="@string/hot_rank"
+            android:background="@color/bg_color" />
+
+        <Button
+            android:id="@+id/timeRankTV"
+            android:layout_width="50dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:onClick="onRankClick"
+            android:text="@string/time_rank"
+            android:background="@color/bg_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"
+        android:baselineAligned="true" >
+
+        <fragment
+            android:id="@+id/foodListFrag"
+            android:name="com.ustbeatclub.fragment.FoodListFrag"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            tools:context=".FoodListFrag"
+            tools:layout="@layout/frag_food_list" />
+
+        <fragment
+            android:id="@+id/foodDetailFrag"
+            android:name="com.ustbeatclub.fragment.FoodDetailFrag"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            tools:context=".FoodDetailFrag"
+            tools:layout="@layout/frag_food_detail" />
+
+    </LinearLayout>
+
+</LinearLayout>

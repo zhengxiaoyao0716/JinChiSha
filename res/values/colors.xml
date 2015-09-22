@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_color">#eeeeee</color>
+    
+    <color name="action_bar_color">#e0e0e0</color>
+    <color name="sort_text_color">#0000ff</color>
+    <color name="second_ac_color">#fc4100</color>
+    <color name="second_titleText_color">#ffffff</color>
+    
+    <color name="light_color">#fc4100</color>
+    <color name="food_list_bg_color">#dddddd</color>
+    <color name="food_list_driver_color">#aaaaaa</color>
+    <color name="food_detail_bg_color">#ffffff</color>
+    <color name="food_list_light_color">#0000ff</color>
+    
+    <color name="normal_text_color">#7f7f7f</color>
+    <color name="light_text_color">#ffffff</color>
+    
+    <color name="dot_color_normal">#9a7fff</color>
+    <color name="dot_color_light">#5331fc</color>
+</resources>
