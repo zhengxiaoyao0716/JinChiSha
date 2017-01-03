@@ -15,15 +15,13 @@ public class DefaultImage {
 			= Bitmap.createBitmap(180, 180, Bitmap.Config.ARGB_8888);
 	static
 	{
-		Canvas canvasTemp = new Canvas(defaultImage);
-		canvasTemp.drawColor(Color.WHITE);
-		Paint p = new Paint();
-		p.setColor(Color.BLACK);
-		String familyName ="宋体";
-		Typeface font = Typeface.create(familyName, Typeface.BOLD);
-		p.setTypeface(font);
-		p.setTextSize(24);
-		String mstrTitle = "图片加载中";
-		canvasTemp.drawText(mstrTitle,6,30,p);
+		Paint paint = new Paint();
+        paint.setColor(Color.BLACK);
+        paint.setTypeface(Typeface.create("宋体", Typeface.BOLD));
+        paint.setTextSize(24);
+
+        Canvas canvasTemp = new Canvas(faceBitmap);
+        canvasTemp.drawColor(Color.WHITE);
+        canvasTemp.drawText("点我拍照", 6, 30, paint);
 	}
 }

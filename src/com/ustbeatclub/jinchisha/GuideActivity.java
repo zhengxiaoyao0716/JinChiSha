@@ -21,8 +21,7 @@ public class GuideActivity extends Activity implements OnClickListener, OnPageCh
 	private List<View> views;
 
 	//引导图片资源
-	private static final int[] pics =
-			{R.drawable.guide0, R.drawable.guide1, R.drawable.guide2, R.drawable.guide3};
+	private int[] pics;
 
 	//底部小店图片
 	private ImageView[] dots ;
@@ -37,9 +36,10 @@ public class GuideActivity extends Activity implements OnClickListener, OnPageCh
 		setContentView(R.layout.activity_guide);
 
 		views = new ArrayList<View>();
+		pics = new int[]{R.drawable.guide0, R.drawable.guide1, R.drawable.guide2, R.drawable.guide3};
 
-		LinearLayout.LayoutParams mParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,
-				LinearLayout.LayoutParams.WRAP_CONTENT);
+		LinearLayout.LayoutParams mParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
+				LinearLayout.LayoutParams.MATCH_PARENT);
 
 		//初始化引导图片列表
 		for(int i=0; i<pics.length; i++) {
